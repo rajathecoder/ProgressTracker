@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tints the notification icon and accent line. -->
+    <color name="notification_accent">#22C57A</color>
+
+    <!-- Home-screen widget palette. Kept in sync with WidgetPalette in
+         lib/features/home_widgets/widget_designs.dart. -->
+    <color name="widget_card_bg">#FFFFFFFF</color>
+    <color name="widget_ink">#FF1A202C</color>
+    <color name="widget_muted">#FF8A94A6</color>
+    <color name="widget_green">#FF34C77B</color>
+    <color name="widget_blue">#FF3B6BF0</color>
+    <color name="widget_amber">#FFF5A623</color>
+</resources>

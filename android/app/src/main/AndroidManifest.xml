@@ -1,0 +1,188 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- permissions_matrix.android -->
+
+    <!-- All reminders. Runtime-requested on API 33+. -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
+    <!-- Exact 05:30 wake alarm. USE_EXACT_ALARM is granted at install for
+         alarm-clock style apps; SCHEDULE_EXACT_ALARM is the special-access
+         fallback the user grants from settings on API 33+. We degrade to
+         inexact alarms if neither is available. -->
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM"/>
+
+    <!-- edge_case_handling.device_reboot: without this, every scheduled alarm
+         dies silently on reboot - the single most common cause of "my habit
+         app stopped reminding me". -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <!-- Haptic patterns. -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <!-- Pedometer. Requested only when the steps habit is first enabled. -->
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION"/>
+
+    <!-- Journal app lock. -->
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+
+    <!-- edge_case_handling.aggressive_oem_battery_management -->
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+    <!-- The step counter is optional: the app feature-detects and falls back to
+         manual entry, so it must not gate installation. -->
+    <uses-feature
+        android:name="android.hardware.sensor.stepcounter"
+        android:required="false"/>
+
+    <application
+        android:label="@string/app_name"
+        android:name="${applicationName}"
+        android:icon="@mipmap/ic_launcher">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:taskAffinity=""
+            android:theme="@style/LaunchTheme"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+              android:name="io.flutter.embedding.android.NormalTheme"
+              android:resource="@style/NormalTheme"
+              />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+
+        <!-- Status-bar icon for every notification the app posts. Android masks
+             this to a single colour, so it must be the white silhouette. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/notification_accent" />
+
+        <!-- flutter_local_notifications: reschedule every alarm after a reboot,
+             a timezone change or an app upgrade. -->
+        <receiver
+            android:exported="false"
+            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:exported="false"
+            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver" />
+
+        <!-- Notification action buttons and Android inline direct-reply. -->
+        <receiver
+            android:exported="false"
+            android:name="com.dexterous.flutterlocalnotifications.ActionBroadcastReceiver" />
+
+        <!-- Receives taps from the interactive widgets and hands them to the
+             Dart callback registered in main(). Without this declaration the
+             taps are delivered nowhere and the widget looks inert. -->
+        <receiver
+            android:name="es.antonborri.home_widget.HomeWidgetBackgroundReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="es.antonborri.home_widget.action.BACKGROUND" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="es.antonborri.home_widget.HomeWidgetBackgroundService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <!-- core_features.home_screen_widgets
+             One provider per surface so each appears separately in the
+             launcher's widget picker, all sharing one image-blitting layout. -->
+        <receiver
+            android:name=".ArcCoreWidgetProvider"
+            android:exported="true"
+            android:label="@string/widget_desc_ring">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/arccore_widget_info" />
+        </receiver>
+
+        <receiver
+            android:name=".ArcCoreFocusWidgetProvider"
+            android:exported="true"
+            android:label="@string/widget_desc_focus">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/arccore_focus_widget_info" />
+        </receiver>
+
+        <receiver
+            android:name=".ArcCoreStreaksWidgetProvider"
+            android:exported="true"
+            android:label="@string/widget_desc_streaks">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/arccore_streaks_widget_info" />
+        </receiver>
+
+        <receiver
+            android:name=".ArcCoreTodayWidgetProvider"
+            android:exported="true"
+            android:label="@string/widget_desc_today">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/arccore_today_widget_info" />
+        </receiver>
+
+        <receiver
+            android:name=".ArcCoreMetricWidgetProvider"
+            android:exported="true"
+            android:label="@string/widget_desc_metric">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/arccore_metric_widget_info" />
+        </receiver>
+
+    </application>
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.PROCESS_TEXT"/>
+            <data android:mimeType="text/plain"/>
+        </intent>
+    </queries>
+</manifest>

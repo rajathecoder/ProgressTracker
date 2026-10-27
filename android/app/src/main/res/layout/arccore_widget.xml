@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Image-backed widget.
+
+  The frame is deliberately transparent and carries no padding: the PNG that
+  Flutter renders already draws the whole card, rounded corners and all. A
+  background here produced a second card behind the first, which is what made
+  the widgets look like a small tile floating inside a big dark box.
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/widget_root">
+
+    <ImageView
+        android:id="@+id/widget_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:id="@+id/widget_fallback"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="12dp"
+        android:background="@drawable/widget_card">
+
+        <TextView
+            android:id="@+id/widget_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/widget_ink"
+            android:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/widget_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="13sp"
+            android:textColor="@color/widget_muted"
+            android:text="" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Happy Days</string>
+    <string name="widget_desc_ring">Habit streak ring</string>
+    <string name="widget_desc_focus">Concentration timer</string>
+    <string name="widget_desc_streaks">Your longest streaks</string>
+    <string name="widget_desc_today">Today\'s checklist</string>
+    <string name="widget_desc_metric">Daily progress</string>
+    <string name="widget_today_label">Today</string>
+    <string name="widget_focus_play">Start</string>
+    <string name="widget_focus_pause">Pause</string>
+    <string name="widget_focus_stop">Stop</string>
+</resources>

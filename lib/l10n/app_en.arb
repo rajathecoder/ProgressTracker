@@ -1,0 +1,731 @@
+{
+  "@@locale": "en",
+  "appTitle": "Happy Days",
+  "appName": "Happy Days",
+  "morningAlertTitle": "Rise & Conquer",
+  "morningAlertBody": "The arc doesn't wait. Get up.",
+  "middayAlertTitle": "Fuel Check",
+  "middayAlertBody": "Water only. Clean plate. Stay sharp.",
+  "eveningWorkoutTitle": "Move Your Body",
+  "eveningWorkoutBody": "Gym or a 30 minute walk. Pick one.",
+  "nightReviewTitle": "Evening Debrief",
+  "nightReviewBody": "Log the day and note one thing you're grateful for.",
+  "habitEarlyWake": "Wake up early",
+  "habitWaterOnly": "Water only",
+  "habitNoJunkFood": "No junk food",
+  "habitSleepTarget": "7-8 hours of sleep",
+  "habitGymWorkout": "Gym 4-5 days a week",
+  "habitStepsGoal": "10k steps",
+  "habitNoPhoneMeals": "No phone during meals",
+  "habitWalking": "30 minutes walk",
+  "habitGratitude": "Be grateful to God daily",
+  "habitNoteProgress": "Note your progress",
+  "habitRead": "Read 20 pages",
+  "habitMeditate": "Meditate 10 minutes",
+  "habitColdShower": "Cold shower",
+  "habitStretch": "Stretch 10 minutes",
+  "habitNoSocialMedia": "No social media",
+  "habitDeepWork": "90 minutes of deep work",
+  "habitJournal": "Write in your journal",
+  "habitLearnSkill": "Practise your craft",
+  "habitPlanTomorrow": "Plan tomorrow tonight",
+  "habitNoScreensBed": "No screens before bed",
+  "habitProtein": "Hit your protein target",
+  "habitVitamins": "Take your vitamins",
+  "habitFloss": "Floss",
+  "habitSunlight": "15 minutes of sunlight",
+  "habitCallFamily": "Call someone you love",
+  "habitActOfKindness": "One act of kindness",
+  "habitTidySpace": "Tidy your space",
+  "habitNoAlcohol": "No alcohol",
+  "habitBudgetCheck": "Check your budget",
+  "habitPray": "Prayer or reflection",
+  "habitLanguage": "Practise a language",
+  "habitSideProject": "Ship something small",
+  "statDiscipline": "Discipline",
+  "statVitality": "Vitality",
+  "statStrength": "Strength",
+  "statFocus": "Focus",
+  "statSpirit": "Spirit",
+  "categoryBody": "Body",
+  "categoryMind": "Mind",
+  "categorySpirit": "Spirit",
+  "categoryCraft": "Craft",
+  "categorySocial": "Social",
+  "welcomeGreetingMorning": "Good morning",
+  "welcomeGreetingAfternoon": "Good afternoon",
+  "welcomeGreetingEvening": "Good evening",
+  "welcomeTagline": "Small days, stacked well.",
+  "welcomeGetStartedHint": "Let's set up your first arc.",
+  "onboardingWelcome": "Welcome to Happy Days",
+  "onboardingSubtitle": "Build the days you want to remember. Everything stays on your device.",
+  "enterFullName": "Enter your full name",
+  "enterNickname": "What should we call you?",
+  "onboardingIdentityTitle": "Who's running this arc?",
+  "onboardingArcTitle": "How long is your arc?",
+  "onboardingHabitsTitle": "Pick your starting habits",
+  "onboardingHabitsSubtitle": "Pick as many as you like. You can add, edit or archive any of them later.",
+  "onboardingThemeTitle": "Choose your surface",
+  "onboardingPermissionTitle": "Stay on schedule",
+  "onboardingSelectedCount": "{count} selected",
+  "@onboardingSelectedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "arcLength90": "90 days",
+  "arcLength122": "122 days",
+  "arcLengthCustom": "Custom",
+  "getStarted": "Get Started",
+  "next": "Next",
+  "back": "Back",
+  "skip": "Skip",
+  "dashboardGreeting": "Let's conquer today, {nickname}",
+  "@dashboardGreeting": {
+    "placeholders": {
+      "nickname": {
+        "type": "String"
+      }
+    }
+  },
+  "dashboardTitle": "Protocol",
+  "todaysProtocol": "Today's protocol",
+  "characterSheet": "Character sheet",
+  "settingsThemeLight": "Light Theme",
+  "settingsThemeDark": "Dark Theme",
+  "settingsThemeSystem": "Follow System",
+  "settingsProfileName": "Name: {fullName}",
+  "@settingsProfileName": {
+    "placeholders": {
+      "fullName": {
+        "type": "String"
+      }
+    }
+  },
+  "arcDayCounter": "Day {current} of {total}",
+  "@arcDayCounter": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "arcNotStarted": "Your arc starts in {days} days",
+  "@arcNotStarted": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "streakCount": "{count, plural, =0{No streak yet} =1{1 day streak} other{{count} day streak}}",
+  "@streakCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "shieldCount": "{count, plural, =0{No shields} =1{1 shield} other{{count} shields}}",
+  "@shieldCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "shieldConsumed": "A shield absorbed yesterday's miss. {remaining} left.",
+  "@shieldConsumed": {
+    "placeholders": {
+      "remaining": {
+        "type": "int"
+      }
+    }
+  },
+  "multiplierActive": "{value}x XP multiplier active",
+  "@multiplierActive": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "levelUpTitle": "Level {level}",
+  "@levelUpTitle": {
+    "placeholders": {
+      "level": {
+        "type": "int"
+      }
+    }
+  },
+  "rankUnlocked": "Rank unlocked: {rankName}",
+  "@rankUnlocked": {
+    "placeholders": {
+      "rankName": {
+        "type": "String"
+      }
+    }
+  },
+  "achievementUnlocked": "Achievement unlocked",
+  "bossWeekTitle": "Boss Week: {name}",
+  "@bossWeekTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "bossWeekProgress": "{completed} of {required} complete",
+  "@bossWeekProgress": {
+    "placeholders": {
+      "completed": {
+        "type": "int"
+      },
+      "required": {
+        "type": "int"
+      }
+    }
+  },
+  "notScheduledToday": "Not scheduled today",
+  "backfillTitle": "Log for {date}",
+  "@backfillTitle": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "backfillLate": "Logged late",
+  "backfillWindowClosed": "This day is outside your logging window",
+  "metricEntryLabel": "{value} of {target} {unit}",
+  "@metricEntryLabel": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      },
+      "target": {
+        "type": "String"
+      },
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "partialCredit": "Partial credit: {percent}%",
+  "@partialCredit": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "xpEarned": "+{xp} XP",
+  "@xpEarned": {
+    "placeholders": {
+      "xp": {
+        "type": "int"
+      }
+    }
+  },
+  "xpToNextLevel": "{current} / {target} XP",
+  "@xpToNextLevel": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "todayComplete": "{completed} of {total} done",
+  "@todayComplete": {
+    "placeholders": {
+      "completed": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "perfectDay": "Flawless day",
+  "matrixTitle": "Matrix",
+  "matrixZoomWeek": "Week",
+  "matrixZoomMonth": "Month",
+  "matrixZoomArc": "Arc",
+  "jumpToToday": "Today",
+  "matrixLinearView": "List view",
+  "matrixGridView": "Grid view",
+  "filterAll": "All",
+  "cellStateComplete": "completed",
+  "cellStatePartial": "partially complete",
+  "cellStateIncomplete": "not completed",
+  "cellStateMissed": "missed",
+  "cellStateNotScheduled": "not scheduled",
+  "cellSemanticLabel": "{habit}, {date}, {state}",
+  "@cellSemanticLabel": {
+    "placeholders": {
+      "habit": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      },
+      "state": {
+        "type": "String"
+      }
+    }
+  },
+  "habitCompletionRate": "{percent}%",
+  "@habitCompletionRate": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "analyticsTitle": "Insights",
+  "analyticsBestDay": "Your strongest day is {weekday}",
+  "@analyticsBestDay": {
+    "placeholders": {
+      "weekday": {
+        "type": "String"
+      }
+    }
+  },
+  "analyticsWeakestDay": "You miss most on {weekday}",
+  "@analyticsWeakestDay": {
+    "placeholders": {
+      "weekday": {
+        "type": "String"
+      }
+    }
+  },
+  "analyticsCorrelation": "On days you complete {habitA}, you complete {multiplier}x more habits overall",
+  "@analyticsCorrelation": {
+    "placeholders": {
+      "habitA": {
+        "type": "String"
+      },
+      "multiplier": {
+        "type": "String"
+      }
+    }
+  },
+  "analyticsProjection": "On this pace you'll finish the arc at {percent}%",
+  "@analyticsProjection": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "analyticsNotEnoughData": "Come back after 7 days of logging",
+  "analyticsHeatmap": "Contribution heatmap",
+  "analyticsWeekly": "Weekly consistency",
+  "analyticsStatProgression": "Stat progression",
+  "analyticsWeekday": "Weekday breakdown",
+  "analyticsCorrelationTitle": "Habit correlations",
+  "analyticsTimeOfDay": "When you log",
+  "analyticsProjectionTitle": "Arc projection",
+  "analyticsNoCorrelations": "No strong correlations yet. Keep logging.",
+  "habitLibraryTitle": "Habit Library",
+  "createCustomHabit": "Create your own",
+  "editHabit": "Edit habit",
+  "habitFrequencyDaily": "Every day",
+  "habitFrequencyWeekly": "{count} times per week",
+  "@habitFrequencyWeekly": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "habitFrequencyCustom": "Selected days",
+  "habitFrequencyInterval": "Every {count} days",
+  "@habitFrequencyInterval": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "archiveHabit": "Archive habit",
+  "archiveHabitWarning": "Past records are kept. It just won't appear on future days.",
+  "unarchiveHabit": "Restore habit",
+  "activeHabits": "Active",
+  "archivedHabits": "Archived",
+  "habitTitleLabel": "Habit name",
+  "habitIconLabel": "Icon",
+  "habitCategoryLabel": "Category",
+  "habitStatLabel": "Stat",
+  "habitXpLabel": "XP reward",
+  "habitMetricLabel": "Measured in",
+  "habitTargetLabel": "Daily target",
+  "habitReminderLabel": "Reminder",
+  "habitFrequencyLabel": "Frequency",
+  "noReminder": "No reminder",
+  "save": "Save",
+  "cancel": "Cancel",
+  "delete": "Delete",
+  "confirm": "Confirm",
+  "emptyHabitsTitle": "No habits yet",
+  "emptyHabitsBody": "Add a few from the library to start your arc.",
+  "unitBoolean": "done",
+  "unitSteps": "steps",
+  "unitLiters": "litres",
+  "unitMinutes": "minutes",
+  "unitHours": "hours",
+  "unitCount": "times",
+  "journalTitle": "Journal",
+  "journalSearchHint": "Search your entries",
+  "journalMoodPrompt": "How was today?",
+  "journalOnThisDay": "On this day",
+  "journalGratitudeLabel": "One thing you're grateful for",
+  "journalNotesLabel": "How did today go?",
+  "journalTagsLabel": "Tags",
+  "journalAddPhoto": "Add photo",
+  "journalSaved": "Saved",
+  "emptyJournalTitle": "Nothing written yet",
+  "emptyJournalBody": "Your debriefs will collect here.",
+  "mood1": "Rough",
+  "mood2": "Low",
+  "mood3": "Steady",
+  "mood4": "Good",
+  "mood5": "Excellent",
+  "appLockTitle": "Unlock your journal",
+  "appLockPinFallback": "Use PIN instead",
+  "appLockSetPin": "Set a PIN",
+  "appLockEnterPin": "Enter your PIN",
+  "appLockWrongPin": "Incorrect PIN",
+  "appLockUnlock": "Unlock",
+  "settingsTitle": "Settings",
+  "settingsDayRollover": "New day starts at",
+  "settingsRetroWindow": "Allow logging up to {days} days back",
+  "@settingsRetroWindow": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsHardcoreMode": "Hardcore Mode",
+  "settingsHardcoreModeDesc": "No shields, no backfill. What you log that day is what counts.",
+  "settingsPartialCredit": "Partial credit",
+  "settingsPartialCreditDesc": "Award proportional XP when you fall short of a numeric target.",
+  "settingsReduceMotion": "Reduce motion",
+  "settingsHighContrast": "High contrast",
+  "settingsSound": "Sound effects",
+  "settingsHaptics": "Haptics",
+  "settingsBatteryWarning": "Your device may stop reminders. Tap to allow background activity.",
+  "settingsSectionProfile": "Profile",
+  "settingsSectionAppearance": "Appearance",
+  "settingsSectionReminders": "Reminders",
+  "settingsSectionArc": "Arc rules",
+  "settingsSectionAccessibility": "Accessibility",
+  "settingsSectionPrivacy": "Privacy",
+  "settingsSectionData": "Data",
+  "settingsLanguage": "Language",
+  "settingsLanguageSystem": "System default",
+  "settingsAppLock": "App lock",
+  "settingsAppLockScopeJournal": "Journal only",
+  "settingsAppLockScopeApp": "Whole app",
+  "settingsExactAlarms": "Exact alarms",
+  "settingsExactAlarmsDesc": "Required for on-the-minute wake-up reminders.",
+  "settingsNotifications": "Notifications",
+  "settingsReminderTimes": "Reminder times",
+  "remindersStatusTitle": "Reminder status",
+  "remindersHealthy": "{count} reminders armed",
+  "@remindersHealthy": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "remindersBlocked": "Notifications are blocked for Happy Days",
+  "remindersNoneArmed": "No reminders are armed",
+  "remindersExactOn": "Exact alarms on",
+  "remindersExactOff": "Inexact alarms - times may drift by a few minutes",
+  "remindersTimezone": "Anchored to {zone}",
+  "@remindersTimezone": {
+    "placeholders": {
+      "zone": {
+        "type": "String"
+      }
+    }
+  },
+  "sendTestReminder": "Send a test reminder",
+  "testReminderQueued": "Test reminder in 10 seconds - close the app to check",
+  "testReminderFailed": "Could not schedule the test reminder",
+  "testReminderTitle": "Test reminder",
+  "testReminderBody": "If you can see this, your reminders are working.",
+  "remindersFixPermission": "Turn on notifications",
+  "backgroundRefresh": "Background refresh",
+  "backgroundRefreshDesc": "Keeps the widget and daily backup current when the app is closed.",
+  "backgroundRunNow": "Run now",
+  "backgroundRanNow": "Refreshed",
+  "editProfile": "Edit profile",
+  "profileSaved": "Profile updated",
+  "languageSearchHint": "Search languages",
+  "languageIndian": "Indian languages",
+  "languageWorld": "More languages",
+  "languageTranslated": "Translated",
+  "languageFallbackNote": "Languages without a translation show English text.",
+  "focusTitle": "Focus",
+  "menuTitle": "Menu",
+  "focusSubtitle": "Concentration timer",
+  "focusSetDuration": "Session length",
+  "focusStart": "Start",
+  "focusPause": "Pause",
+  "focusResume": "Resume",
+  "focusReset": "Reset",
+  "focusDone": "Session complete",
+  "focusDoneBody": "{minutes} minutes of focus logged.",
+  "@focusDoneBody": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "focusRunning": "Focus in progress",
+  "focusTodayTotal": "{minutes} min today",
+  "@focusTodayTotal": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "focusSessions": "{count, plural, =0{No sessions yet} =1{1 session} other{{count} sessions}}",
+  "@focusSessions": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "focusPickPreset": "Quick pick",
+  "focusMinutesShort": "{minutes} min",
+  "@focusMinutesShort": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "focusKeepScreenOn": "Keep the screen awake",
+  "focusAbandon": "Discard session?",
+  "focusAbandonBody": "Your progress in this session will not be saved.",
+  "widgetPreviewTitle": "Home screen widgets",
+  "widgetPreviewSubtitle": "Add these from your home screen's widget picker.",
+  "widgetRingTitle": "Habit ring",
+  "widgetTimerTitle": "Focus timer",
+  "widgetStreakTitle": "Streaks",
+  "widgetTodayTitle": "Today",
+  "widgetWaterTitle": "Progress",
+  "insightsPartial": "{logged} of {needed} days logged",
+  "@insightsPartial": {
+    "placeholders": {
+      "logged": {
+        "type": "int"
+      },
+      "needed": {
+        "type": "int"
+      }
+    }
+  },
+  "insightsEarlyTitle": "Your insights are building",
+  "journalToday": "Today's entry",
+  "journalPast": "Earlier entries",
+  "journalEdit": "Edit",
+  "journalDelete": "Clear entry",
+  "journalUnsaved": "Unsaved changes",
+  "backupTitle": "Backup & Restore",
+  "backupLast": "Last backup: {timestamp}",
+  "@backupLast": {
+    "placeholders": {
+      "timestamp": {
+        "type": "String"
+      }
+    }
+  },
+  "backupNever": "No backup yet",
+  "backupEncrypt": "Protect with a passphrase",
+  "backupExportJson": "Export JSON",
+  "backupExportCsv": "Export CSV",
+  "backupRestore": "Restore from backup",
+  "restoreConfirm": "Replace all current data with this backup?",
+  "restoreVersionMismatch": "This backup is from a newer version of the app",
+  "restoreChecksumFailed": "This file is corrupted or was modified",
+  "restoreMerge": "Merge",
+  "restoreReplace": "Replace",
+  "restoreDryRun": "{days} days, {habits} habits, {journals} journal entries",
+  "@restoreDryRun": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "habits": {
+        "type": "int"
+      },
+      "journals": {
+        "type": "int"
+      }
+    }
+  },
+  "restoreSuccess": "Restored",
+  "passphrasePrompt": "Enter passphrase",
+  "trophyHallTitle": "Trophy Hall",
+  "trophyLocked": "Locked",
+  "trophyUnlockedOn": "Unlocked {date}",
+  "@trophyUnlockedOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "emptyTrophyTitle": "No trophies yet",
+  "emptyTrophyBody": "Complete your first habit to open the hall.",
+  "achievementProgress": "{current} / {target}",
+  "@achievementProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "arcCompleteTitle": "Arc Complete",
+  "arcCompleteSubtitle": "{days} days. Here's what you built.",
+  "@arcCompleteSubtitle": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "startNewArc": "Start a new arc",
+  "carryHabits": "Carry over my habits",
+  "carryStats": "Keep my stats",
+  "shareCard": "Share",
+  "recapTotalXp": "Total XP",
+  "recapBestStreak": "Best streak",
+  "recapCompletionRate": "Completion",
+  "recapPerfectDays": "Perfect days",
+  "recapDay1": "Day 1",
+  "recapFinal": "Final",
+  "arcHistoryTitle": "Past arcs",
+  "permissionNotificationRationale": "Happy Days needs notification access to remind you. Nothing leaves your device.",
+  "permissionExactAlarmRationale": "Exact alarms keep your 5:30 wake-up on time.",
+  "permissionActivityRationale": "Step tracking reads your device's built-in step counter. No location is used.",
+  "permissionAllow": "Allow",
+  "permissionNotNow": "Not now",
+  "permissionOpenSettings": "Open settings",
+  "errorGeneric": "Something went wrong",
+  "undo": "Undo",
+  "close": "Close",
+  "done": "Done",
+  "loading": "Loading",
+  "retry": "Retry",
+  "achievementNamePrefix": "Achievement",
+  "achFirstBlood": "First Blood",
+  "achFirstBloodDesc": "Complete your first habit",
+  "achPerfectDay": "Flawless",
+  "achPerfectDayDesc": "Complete every scheduled habit in one day",
+  "achStreak3": "Ignition",
+  "achStreak3Desc": "3-day streak",
+  "achStreak7": "One Week In",
+  "achStreak7Desc": "7-day streak",
+  "achStreak14": "Fortnight",
+  "achStreak14Desc": "14-day streak",
+  "achStreak30": "Habit Formed",
+  "achStreak30Desc": "30-day streak",
+  "achStreak60": "Unshakeable",
+  "achStreak60Desc": "60-day streak",
+  "achStreak100": "Century",
+  "achStreak100Desc": "100-day streak",
+  "achPerfectArc": "The Full Arc",
+  "achPerfectArcDesc": "Complete the whole arc with no unshielded miss",
+  "achTenPerfectDays": "Double Digits",
+  "achTenPerfectDaysDesc": "10 total perfect days",
+  "achEarlyRiser30": "Dawn Patrol",
+  "achEarlyRiser30Desc": "30 early wake-ups logged",
+  "achGym50": "Iron Contract",
+  "achGym50Desc": "50 gym sessions logged",
+  "achSteps500k": "Half a Million",
+  "achSteps500kDesc": "500,000 cumulative steps",
+  "achGratitude100": "Grateful Heart",
+  "achGratitude100Desc": "100 gratitude entries",
+  "achClean30": "Clean Engine",
+  "achClean30Desc": "30 no-junk-food days",
+  "achHydrated60": "Water Only",
+  "achHydrated60Desc": "60 water-only days",
+  "achLevel10": "Frost Initiate",
+  "achLevel10Desc": "Reach Level 10",
+  "achLevel25": "Iron Ascetic",
+  "achLevel25Desc": "Reach Level 25",
+  "achLevel50": "Winter Sovereign",
+  "achLevel50Desc": "Reach Level 50",
+  "achBalanced": "Well Rounded",
+  "achBalancedDesc": "All five stat scores above 50 at once",
+  "achPhoenix": "Phoenix Protocol",
+  "achPhoenixDesc": "Return after a missed day and complete 7 straight",
+  "achNoShields30": "Bare Handed",
+  "achNoShields30Desc": "30 consecutive days with zero shields consumed",
+  "achFirstBackup": "Insurance",
+  "achFirstBackupDesc": "Create your first backup",
+  "achArchitect": "Architect",
+  "achArchitectDesc": "Create your first custom habit",
+  "rankEmberSpark": "Ember Spark",
+  "rankFrostInitiate": "Frost Initiate",
+  "rankIronAscetic": "Iron Ascetic",
+  "rankStormWarden": "Storm Warden",
+  "rankArcChampion": "Arc Champion",
+  "rankWinterSovereign": "Winter Sovereign",
+  "bossWeekBanner": "Boss week active",
+  "bossWeekReward": "+{xp} XP on completion",
+  "@bossWeekReward": {
+    "placeholders": {
+      "xp": {
+        "type": "int"
+      }
+    }
+  },
+  "notifActionWakeDone": "Mark wake-up done",
+  "notifActionSnooze": "Snooze 15m",
+  "notifActionLogWorkout": "Log workout",
+  "notifActionRestDay": "Rest day",
+  "notifActionOpenDebrief": "Open debrief",
+  "notifActionQuickGratitude": "Quick gratitude",
+  "radarSemanticSummary": "Stat radar. {summary}",
+  "@radarSemanticSummary": {
+    "placeholders": {
+      "summary": {
+        "type": "String"
+      }
+    }
+  },
+  "statScoreLabel": "{stat}: {score} out of 100",
+  "@statScoreLabel": {
+    "placeholders": {
+      "stat": {
+        "type": "String"
+      },
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "tabularFallback": "View as table"
+}

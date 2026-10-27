@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Concentration timer.
+
+  The countdown is a Chronometer rather than a TextView: a widget cannot tick
+  itself, and re-broadcasting every second to redraw a number would be brutal on
+  battery. Chronometer counts down on its own from a fixed base, so the widget
+  stays live while doing nothing.
+
+  Tapping the card opens the Focus screen; the buttons act without opening
+  anything.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/widget_root"
+    android:orientation="vertical"
+    android:background="@drawable/widget_card"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_widget_focus"
+            android:contentDescription="@string/widget_desc_focus" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="13sp"
+            android:textColor="@color/widget_ink"
+            android:text="@string/widget_desc_focus" />
+    </LinearLayout>
+
+    <Chronometer
+        android:id="@+id/focus_clock"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:textColor="@color/widget_ink" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/focus_play"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_widget_play"
+            android:contentDescription="@string/widget_focus_play" />
+
+        <ImageView
+            android:id="@+id/focus_pause"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_widget_pause"
+            android:contentDescription="@string/widget_focus_pause" />
+
+        <ImageView
+            android:id="@+id/focus_stop"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_widget_stop"
+            android:contentDescription="@string/widget_focus_stop" />
+    </LinearLayout>
+</LinearLayout>

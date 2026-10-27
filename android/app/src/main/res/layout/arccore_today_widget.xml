@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Today's checklist, drawn natively rather than as an image.
+
+  Each row needs its own tap target so a habit can be ticked off without opening
+  the app, and a single ImageView cannot carry per-row clicks. This is the one
+  surface where duplicating a little styling in XML buys real interactivity.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/widget_root"
+    android:orientation="vertical"
+    android:background="@drawable/widget_card"
+    android:padding="14dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/today_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/widget_green"
+            android:text="@string/widget_today_label" />
+
+        <TextView
+            android:id="@+id/today_count"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:textSize="15sp"
+            android:textColor="@color/widget_muted"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/today_add"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/ic_widget_add"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row_0"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="6dp"
+            android:paddingBottom="2dp">
+
+            <ImageView
+                android:id="@+id/check_0"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:src="@drawable/ic_check_box_blank"
+                android:contentDescription="@string/widget_desc_today" />
+
+            <TextView
+                android:id="@+id/title_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="15sp"
+                android:textColor="@color/widget_ink"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp">
+
+            <ImageView
+                android:id="@+id/check_1"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:src="@drawable/ic_check_box_blank"
+                android:contentDescription="@string/widget_desc_today" />
+
+            <TextView
+                android:id="@+id/title_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="15sp"
+                android:textColor="@color/widget_ink"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp">
+
+            <ImageView
+                android:id="@+id/check_2"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:src="@drawable/ic_check_box_blank"
+                android:contentDescription="@string/widget_desc_today" />
+
+            <TextView
+                android:id="@+id/title_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="15sp"
+                android:textColor="@color/widget_ink"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row_3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp">
+
+            <ImageView
+                android:id="@+id/check_3"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:src="@drawable/ic_check_box_blank"
+                android:contentDescription="@string/widget_desc_today" />
+
+            <TextView
+                android:id="@+id/title_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="15sp"
+                android:textColor="@color/widget_ink"
+                android:text="" />
+        </LinearLayout>
+
+</LinearLayout>
